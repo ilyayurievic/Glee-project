@@ -1,0 +1,96 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        height: 140px;
+        align-items: center;
+    }
+    &__menu-list{
+        display: flex;
+     
+    }
+    &__menu-item{
+        &+.header__menu-item{
+            margin-left: 30px;
+        }
+    }
+    &__menu-link{
+       font-size: 15px;
+       color: $default; 
+       @extend %rubik-500;
+       color: #2B6373;
+       position: relative;
+    }
+    &__menu-link__more{
+        position: absolute;
+        top: 2px;
+        right: -13px;
+    }
+    &__nav{
+        display: flex;
+    }
+    &__nav-item__box{
+        background-color: #FFD8B6;
+        margin: 0 18px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 23px;
+        align-items: center;
+    }
+    &__nav-box__item{
+        display: flex;
+        align-items: center;
+        padding: 16px 27px;
+        position: relative;
+        &:nth-child(1)::after{
+            content:'';
+            position: absolute;
+            width: 1px;
+            height: 35px;
+            background-color: #fff;
+            right: 0;
+        }
+    }
+    &__nav-item__num{
+        position: absolute;
+        font-size: 10px;
+        font-weight: 500;
+        right: 18px;
+        top: 9px;
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %dmsans-400;
+        color: #023D4C;
+    }
+    &__nav-item{
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__nav-item--search{
+        background-color: #ECF1F4;
+    }
+    &__nav-item--menu{
+        background-color: #9ABCCA;
+    }
+}
+
+
+
+
+
+@import 'media';
