@@ -23,3 +23,10 @@ body{
    padding: 0 15px;
    margin: 0 auto;
  }
+
+ .title{
+  @extend %rubik-400;
+  font-size: 36px;
+  margin-bottom: 35px;
+  text-align: center;
+ }

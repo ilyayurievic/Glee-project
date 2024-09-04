@@ -19,7 +19,12 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.1",
+    "mixitup": "^3.3.1",
     "postcss": "^8.4.39",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
   }
 }
