@@ -602,13 +602,14 @@
 }
 
 .article {
-     position: relative;
-     padding-bottom: 260px;
+    position: relative;
+    padding-bottom: 260px;
+
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-       
+
     }
 
     &__top-link {
@@ -640,11 +641,12 @@
         flex-direction: column;
         background-color: #fff;
     }
-    &__content-img{
+
+    &__content-img {
         width: 100%;
     }
 
-    &__content-info__box{
+    &__content-info__box {
         position: relative;
         padding: 35px 27px 27px 27px;
         display: flex;
@@ -652,48 +654,183 @@
         justify-content: space-between;
     }
 
-    &__content-btn{
+    &__content-btn {
         padding: 10px 30px;
-        color:#fff;
+        color: #fff;
         background-color: #9DBCC9;
         @extend %dmsans-700;
         border-radius: 22px;
         position: absolute;
-       top: -20px;
+        top: -20px;
     }
 
-    &__content-text{
+    &__content-text {
         @extend %dmsans-500;
         font-size: 18px;
         color: #000;
         margin-bottom: 33px;
     }
-    &__content-info{
+
+    &__content-info {
         border-top: 1px solid #E0E0E0;
-       margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
     }
 
-    &__partners{
+    &__partners {
         position: absolute;
         top: 321px;
         background-color: #FFF7EF;
         padding: 265px 0 60px;
         z-index: -1;
-         width: 100%;
+        width: 100%;
     }
-    &__partners-inner{
-         display: flex;
+
+    &__partners-inner {
+        display: flex;
         justify-content: space-between;
-       
+
     }
-    &__partners-img{
+
+    &__partners-img {
         object-fit: contain;
     }
 }
 
+.article {
+    position: static;
+    padding: 60px 0 60px;
+
+}
+
+.top {
+    background-color: #ECF1F4;
+    color: #202934;
+    padding: 35px;
+    text-align: center;
+
+    &__title {
+        @extend %rubik-400;
+        font-size: 35px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__breadcrumbs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #838A91;
+    }
+
+    &__breadcrumbs-item {
+        position: relative;
+
+        &::after {
+            content: '/';
+            position: absolute;
+            right: -5px;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &__breadcrumbs-link {
+        @extend %rubik-400;
+        padding: 0 9px;
+
+    }
+}
+
+.login{
+    padding: 120px 0;
+ 
+    &__form{
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1A404F;
+    @extend %rubik-400;
+    }
+    &__input{
+        display: block;
+        height: 60px;
+        width: 100%;
+        margin: 14px 0 30px;
+        padding: 0 20px;
+        border: 1px solid #F6F6F6;
+        outline: none;
+        &:focus{
+            font-size: 20px;
+            color: #396474;
+        }
+    }
+    &__btn{
+        width: 100%;
+        border: none;
+        color: white;
+        text-align: center;
+        background-color: #9DBCC9;
+        padding: 20px;
+        @extend %rubik-700;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+
+    &__help{
+        display: flex;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #F6F6F6;
+        align-items: center; 
+        color: #396474;
+        @extend %rubik-400;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    &__help-input{
+        @extend %checkbox-hidden;
+        &:checked+.login__help-checkbox{
+            background-image: url(../images/icon/chekced.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__help-checkbox{
+        background-color: #EBEBEB;
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+       
+    }
+
+    &__help-link{
+        margin-left: auto;
+    }
+
+    &__text{
+        margin-bottom: 30px;
+        text-align: center;
+        color: #396474;
+        @extend %rubik-400;
+    }
+
+    &__btn-create{
+        width: 100%;
+        border: 1px solid #396474;
+        color: #1A404E;
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+        @extend %rubik-400;
+        cursor: pointer;
+    }
+}
 
 
 
